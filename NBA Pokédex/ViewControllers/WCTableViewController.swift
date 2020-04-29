@@ -8,14 +8,29 @@
 
 import UIKit
 
+class WCTableViewController: UIViewController {
 
-//    let WTeamsArray = [String](repeating: "Dallas Mavericks, Denver Nuggets, Golden State Warriors, Houston Rockets, Los Angeles Clippers, "Los Angeles Lakers", "Memphis Grizzlies", "Minnesota Timberwolves", "New Orleans Pelicans", "Oklahoma City Thunder", "Phoenix Suns", "Portland Trailblazers", "Sacramento Kings", "San Antonio Spurs", "Utah Jazz")
-//
-//     func tableView2(_ tableview: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return WteamsArray.count
-//    }
-//
-//    func tableView2(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "WesternConfTeams", for: indexPath)
-//        cell.textLabel?.text = "\(indexPath.row) \(WteamsArray[indexPath.row])"
-//        return cell
+    
+    @IBOutlet weak var table: UITableView!
+    override func viewDidLoad() {
+    super.viewDidLoad()
+        // Do any additional setup after loading the view
+        
+    }
+    
+    let WTeamsArray: [String] = ["Dallas Mavericks", "Denver Nuggets", "Golden State Warriors", "Houston Rockets", "Los Angeles Clippers", "Los Angeles Lakers", "Memphis Grizzlies", "Minnesota Timberwolves", "New Orleans Pelicans", "Oklahoma City Thunder", "Phoenix Suns", "Portland Trailblazers", "Sacramento Kings", "San Antonio Spurs", "Utah Jazz"]
+}
+
+extension WCTableViewController: UITableViewDataSource {
+
+
+  func tableView(_ tableview: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return WTeamsArray.count
+}
+
+func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "WesternConfTeams", for: indexPath)
+    cell.textLabel?.text = "\(WTeamsArray[indexPath.row])"
+    return cell
+}
+}

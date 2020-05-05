@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6113E50D2458E23D00DC314D /* ECTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6113E50C2458E23D00DC314D /* ECTableViewController.swift */; };
 		6113E50F2458E2E200DC314D /* WCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6113E50E2458E2E200DC314D /* WCTableViewController.swift */; };
+		613BAB3D245FD5F100D14B4F /* TeamPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613BAB3C245FD5F100D14B4F /* TeamPlayerViewController.swift */; };
+		613BAB41245FE5FD00D14B4F /* NBANetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613BAB40245FE5FD00D14B4F /* NBANetwork.swift */; };
 		61856FD52457A5A7006C98D6 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61856FD42457A5A7006C98D6 /* Launch Screen.storyboard */; };
 		61CBE715244654A200E19D52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CBE714244654A200E19D52 /* AppDelegate.swift */; };
 		61CBE717244654A200E19D52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CBE716244654A200E19D52 /* SceneDelegate.swift */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		6113E50C2458E23D00DC314D /* ECTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECTableViewController.swift; sourceTree = "<group>"; };
 		6113E50E2458E2E200DC314D /* WCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCTableViewController.swift; sourceTree = "<group>"; };
+		613BAB3C245FD5F100D14B4F /* TeamPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TeamPlayerViewController.swift; path = ../TeamPlayerViewController.swift; sourceTree = "<group>"; };
+		613BAB40245FE5FD00D14B4F /* NBANetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBANetwork.swift; sourceTree = "<group>"; };
 		61856FD42457A5A7006C98D6 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		61CBE711244654A200E19D52 /* NBA Pokédex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NBA Pokédex.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61CBE714244654A200E19D52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +50,7 @@
 			children = (
 				6113E50C2458E23D00DC314D /* ECTableViewController.swift */,
 				6113E50E2458E2E200DC314D /* WCTableViewController.swift */,
+				613BAB3C245FD5F100D14B4F /* TeamPlayerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -74,6 +79,7 @@
 				61CBE716244654A200E19D52 /* SceneDelegate.swift */,
 				61856FD42457A5A7006C98D6 /* Launch Screen.storyboard */,
 				61CBE71A244654A200E19D52 /* Main.storyboard */,
+				613BAB40245FE5FD00D14B4F /* NBANetwork.swift */,
 				61CBE71D244654A600E19D52 /* Assets.xcassets */,
 				61CBE71F244654A600E19D52 /* LaunchScreen.storyboard */,
 				61CBE722244654A600E19D52 /* Info.plist */,
@@ -154,8 +160,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6113E50D2458E23D00DC314D /* ECTableViewController.swift in Sources */,
+				613BAB3D245FD5F100D14B4F /* TeamPlayerViewController.swift in Sources */,
 				61CBE715244654A200E19D52 /* AppDelegate.swift in Sources */,
 				61CBE717244654A200E19D52 /* SceneDelegate.swift in Sources */,
+				613BAB41245FE5FD00D14B4F /* NBANetwork.swift in Sources */,
 				6113E50F2458E2E200DC314D /* WCTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
